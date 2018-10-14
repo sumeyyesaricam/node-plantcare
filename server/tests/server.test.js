@@ -30,4 +30,8 @@ describe('POST /insertPlants', () => {
                     expect(plants[0].name).toBe(name);
                     done();
                 }).catch((err)=>{
-        
+                    done(err);
+                });
+            })
+    });
+});
