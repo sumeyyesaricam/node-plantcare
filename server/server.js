@@ -14,9 +14,10 @@ app.post('/insertPlant', (req, res) => {
         description: req.body.description,
         wateringInterval: req.body.wateringInterval,
         imageUrl: req.body.imageUrl,
-        fertilizerInterval: req.body.fertilizerInterval,
+        sunInterval: req.body.sunInterval,
         wateringTime: req.body.wateringTime,
-        fertilizierTime: req.body.fertilizierTime,
+        sunTime: req.body.sunTime,
+        createdDate: req.body.createdDate,
     });
 
     Plant.save().then((doc) => {

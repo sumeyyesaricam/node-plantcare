@@ -17,7 +17,7 @@ module.exports = mongoose.model('plant',{
         type: String,
         default: ''
     },
-    fertilizerInterval: {
+    sunInterval: {
         type: Number,
         default: 0
     },
@@ -26,10 +26,14 @@ module.exports = mongoose.model('plant',{
         type: String,
         default: ''
     }, 
-    fertilizierTime: {
+    sunTime: {
         type: String,
         default: ''
     }
-
+    , 
+    createdDate: {
+        type: Date,
+        default: Date.now
+    }
 
 });
